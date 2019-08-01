@@ -2,112 +2,230 @@
 <html>
 <head>
 
-<!-- Styling -->
-<link rel="stylesheet" type="text/css" href="style.css">
 <!-- font -->
 <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
 </head>
+
+<style>
+
+	body{
+		margin:0px;
+		font-family: 'Poppins', sans-serif;
+	}
+
+
+	.flex-container{
+ 		background-image:url(images/bg-hero-desktop.svg);
+ 		background-repeat: no-repeat;
+    	background-color:hsl(193, 100%, 96%);  
+    	height:600px;  
+	}
+
+	.button1 a{
+		box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+		border-radius:20px;
+ 		padding:10px 60px 10px 60px;
+ 		text-decoration: none;
+ 		color:black;
+ 		background-color:white;
+ 		font-weight: 1000;
+ 	}
+
+    .flex-container1{
+    	display: -webkit-flex;
+    	display: flex; 
+    	-webkit-justify-content: space-between;
+    	justify-content: space-between;
+	}
+
+	.flex-item1 {
+    	margin:5%;
+    }
+
+    .flex-container2{
+    	justify-content: space-between;
+    	-webkit-justify-content: space-between;
+    	display: -webkit-flex;
+    	display: flex; 
+	}
+
+	.flex-item2 {
+    	margin:0% 5%;
+    	height: 500px;
+    	width:500px;
+    }
+
+    .button2{
+    	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+		border-radius:20px;
+ 		padding:10px 60px 10px 60px;
+ 		text-decoration: none;
+ 		color:white;
+ 		background-color: hsl(322, 100%, 66%);
+ 		font-weight: 500;
+ 	}
+
+ 	.flex-container3 {
+ 		border-radius: 10px;
+    	display: -webkit-flex;
+    	display: flex;
+    	justify-content: flex-end;
+    	box-shadow: 0px 3px 8px rgba(0.3, 0.3, 0.3, 0.3);
+	 	margin: 10%;	   
+	}
+
+	.flex-item3 {
+    	height: 150px;
+    	margin:2%;
+    	padding:6%;
+	}
+
+	.flex-container4{
+		background-color: white;
+		justify-content: center;
+    	-webkit-justify-content: center;
+    	display: -webkit-flex;
+    	display: flex; 
+    	border-radius: 10px;
+    	box-shadow: 0px 3px 8px rgba(0.3, 0.3, 0.3, 0.3);
+	 	margin:1% 25%;	
+	 	position :relative;
+	 }
+
+	 .flex-item4 {
+    	margin-top:2%;
+    	margin-bottom:5%;
+    	padding:3%;
+	}
+
+	 .button3{
+    	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+		border-radius:20px;
+ 		padding:10px 60px 10px 60px;
+ 		text-decoration: none;
+ 		color:white;
+ 		background-color: hsl(322, 100%, 66%);
+ 		font-weight: 500;
+ 	}
+
+
+ 	.flex-container5{
+		-webkit-justify-content: space-between;
+    	justify-content: space-between;		
+    	display: -webkit-flex;
+    	display: flex; 
+    	box-shadow: 0px 3px 8px rgba(0.3, 0.3, 0.3, 0.3);
+	 	margin:0%;
+	 	background-position: cover;
+		background-color: hsl(192, 100%, 9%);
+		margin-top: -8%;
+
+	 }
+
+	 .flex-item5{
+    	margin-top:10%;
+    	margin-right: 2%;
+    	margin-left: 2%;
+    	margin-bottom: 3%
+	}
+
+	ul li{
+	text-decoration: none;
+	list-style: none;
+	padding:10px;
+	font-size: 18px;
+	color:white;
+}
+
+
+
+</style>
 
 <body>
 
-<section class="header"> 
- <div class="grid_container1">
-	<div>
-	<span>
-		<img class="logo" src="logo.svg">
-	</span>
-	</div>
-	<div style="padding-top: 4%;">
-		<a class="header_button" href="#">Try it free</a>
+<div class="flex-container">
+	<div class="flex-container1">
+		<div class="flex-item1">
+			<img class="logo" src="logo.svg">
+		</div>
+		<div class="flex-item1 button1">
+			<a href="#">Try It Free</a>
+		</div> 
+	</div>	
+
+	<div class="flex-container2">
+		<div class="flex-item2" style="padding:3% 0%;">
+			<h1 style="font-size:35px;font-weight: bold;">Build The Community <br>Your Fans Will Love</h1>
+			<p style="font-size:17px;">Huddle re-imagines the way we build communities.You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p><br>
+			<a class="button2" href="#">Get started for free</a>
+		</div>
+		<div class="flex-item2">
+			<img src="illustration-mockups.svg" style="width:100%;height: 70%; ">
+		</div> 
 	</div>
 </div>
 
-<div style="margin-top:5%" class="grid_container1">
-	<div class="header_text">	
-		<h1 style="font-size:35px;font-weight: bold;">Build The Community <br>Your Fans Will Love</h1>
-		<p style="font-size:17px;">Huddle re-imagines the way we build communities.You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
-		<br>
-		<a class="header_button1" href="#">Get started for free</a>
+<div class="flex-container3">
+  	<div class="flex-item3">
+  		<h1 style="font-size:25px;font-weight: bold;font-weight: 700;">Grow Together</h1>
+		<p style="font-size:15px;color:grey;font-weight: 400;">Generate meaningful discussions with your audience and build a strong, loyal community.Think of the insightful conversations you miss out on with a feedback form.</p>
 	</div>
-	<div>
-		<img src="illustration-mockups.svg" style="width:85%; ">
+  	<div class="flex-item3">
+  	 	<img class="grow_together" src="illustration-grow-together.svg" style="width:70%;height: 100%;">
+ 	</div>
+</div>
+
+<div class="flex-container3">
+  	<div class="flex-item3">
+  	 	<img class="grow_together" src="illustration-flowing-conversation.svg" style="width:70%;height: 100%;">
+ 	</div>
+ 	<div class="flex-item3">
+  		<h1 style="font-size:25px;font-weight: bold;font-weight: 700;">Flowing Conversations</h1>
+		<p style="font-size:15px;color:grey;font-weight: 400;">You would'nt paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
 	</div>
 </div>
-</section>
 
-<section>
-	<div class="container1">
-		 <div class="grid_container1">
-			<div class="header_text2">
-				<h1 style="font-size:25px;font-weight: bold;font-weight: 700;">Grow Together</h1>
-				<p style="font-size:15px;color:grey;font-weight: 400;">Generate meaningful discussions with your audience and build a strong, loyal community.Think of the insightful conversations you miss out on with a feedback form.</p>
-			</div>
-			<span style="margin:4% 5% 4% 25%;">
-				<img class="grow_together" src="illustration-grow-together.svg">
-			</span>
-		</div>
+<div class="flex-container3">
+  	<div class="flex-item3">
+  		<h1 style="font-size:25px;font-weight: bold;font-weight: 700;">Your Users</h1>
+		<p style="font-size:15px;color:grey;font-weight: 400;">It takes no time at allto integrate Huddle with your app's authentication solution.This means, once signed in to your app, your users can start chatting immediately.</p>
 	</div>
-</section>
+  	<div class="flex-item3">
+  	 	<img class="grow_together" src="illustration-your-users.svg" style="width:70%;height: 100%;">
+ 	</div>
+</div>
 
-<section>
-	<div class="container1">
-		 <div class="grid_container1">
-			<span style="margin:4% 5% 4% 25%;">
-				<img class="grow_together" src="illustration-flowing-conversation.svg">
-			</span>
-			<div class="header_text2">
-				<h1 style="font-size:25px;font-weight: bold;font-weight: 700;">Flowing Conversations</h1>
-				<p style="font-size:15px;color:grey;font-weight: 400;">You would'nt paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
-			</div>
-		</div>
-	</div>
-</section>
+<div class="flex-container4">
+	<div class="flex-item4">
+		<center><h2>Ready To Build Your Community?</h2><br>
+		<a class="button3">Get started for free</a></center>
+	</div>	
+</div>
 
-
-<section>
-	<div class="container1">
-		 <div class="grid_container1">
-			<div class="header_text2">
-				<h1 style="font-size:25px;font-weight: bold;font-weight: 700;">Your Users</h1>
-				<p style="font-size:15px;color:grey;font-weight: 400;">It takes no time at allto integrate Huddle with your app's authentication solution.This means, once signed in to your app, your users can start chatting immediately.</p>
-			</div>
-			<span style="margin:4% 5% 4% 25%;">
-				<img class="grow_together" src="illustration-your-users.svg">
-			</span>
-		</div>
-	</div>
-</section>
-
-<section class="container2" style="background-color:white;">
-		<h1 style="padding:5px;">Ready To Build Your Community?</h1>
-		<a class="header_button1" href="#">Get started for free</a>
-</section>
-
-<section class="footer">
-	<div class="grid_container2">
-		<span class="move">
-			<ul>
-				<li><img src="icon-location.svg">&nbsp;&nbsp;&nbsp;lorem ipsum lorem ipsum </li>
-				<li><img src="icon-phone.svg">&nbsp;&nbsp;&nbsp;+1-541-123-4567</li>
-				<li><img src="icon-email.svg">&nbsp;&nbsp;&nbsp;example@huddle.com</li>
-			</ul>
-		</span>
-		<div>
-			<ul>
-				<li>About Us</li>
-				<li>What We Do</li>
-				<li>FAQ</li>
-			</ul>
-		</div>
+<div class="flex-container5">
+	<div class="flex-item5">
 		<ul>
-				<li>Career</li>
-				<li>Blog</li>
-				<li>Contact Us</li>
-			</ul>
-		</div>
-		<span>sss</span>
+			<li><img src="icon-location.svg">&nbsp;&nbsp;&nbsp;lorem ipsum lorem ipsum </li>
+			<li><img src="icon-phone.svg">&nbsp;&nbsp;&nbsp;+1-541-123-4567</li>
+			<li><img src="icon-email.svg">&nbsp;&nbsp;&nbsp;example@huddle.com</li>
+		</ul>
 	</div>
-</section>
+	<div class="flex-item5">
+		<ul>
+			<li>About Us</li>
+			<li>What We Do</li>
+			<li>FAQ</li>
+		</ul>
+	</div>
+	<div class="flex-item5">
+		<ul>
+			<li>Career</li>
+			<li>Blog</li>
+			<li>Contact Us</li>
+		</ul>
+	</div>
+</div>
 
 
 
